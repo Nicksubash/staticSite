@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 400px; /* Adjust width of all slides */
+    height: 400px; /* Adjust height of all slides */
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+
+  .service {
+    background-color: #90cdf4;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .service:hover {
+    transform: translateY(-5px);
+  }
+  
+  .service h3 {
+    color: #4a5568;
+    font-size: 1.5rem;
+    background-color: rgb(255, 173, 114);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .service p {
+    color: #718096;
+    font-size: 1.1rem;
+  }
+
+  
+  @keyframes zoomIn {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  #animatedTag {
+    animation: zoomIn 1s ease-in-out infinite;
+  }
