@@ -1,9 +1,14 @@
-/** @type {import('tailwindcss').Config} */
+// tailwind.config.js
 module.exports = {
   content: ['*'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'header': ['Cedarville Cursive', 'cursive'],
+        'dancing':['Dancing Script','Cursive'],
+        'eagle':['Eagle Lake','Regular']
+      },
+    },
   },
   plugins: [],
 }
-
