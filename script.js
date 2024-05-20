@@ -1,73 +1,94 @@
 
-// Initialize Swiper
-var swiper = new Swiper(".mySwiper", {
-    effect: "coverflow",
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: "auto",
-    coverflowEffect: {
-      rotate: 50,
-      stretch: 0,
-      depth: 100,
-      modifier: 1,
-      slideShadows: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-    },
-    autoplay: {
-      delay: 2000, // Adjust delay (in milliseconds) between slides
-      disableOnInteraction: false, // Allow navigation while autoplaying
-    },
-    on: {
-      slideChange: function () {
-        var activeSlide = this.slides[this.activeIndex];
-        var allSlides = this.slides;
+// // Initialize Swiper
+// var swiper = new Swiper(".mySwiper", {
+//     effect: "coverflow",
+//     grabCursor: true,
+//     centeredSlides: true,
+//     slidesPerView: "auto",
+//     coverflowEffect: {
+//       rotate: 50,
+//       stretch: 0,
+//       depth: 100,
+//       modifier: 1,
+//       slideShadows: false,
+//     },
+//     pagination: {
+//       el: ".swiper-pagination",
+//     },
+//     autoplay: {
+//       delay: 2000, // Adjust delay (in milliseconds) between slides
+//       disableOnInteraction: false, // Allow navigation while autoplaying
+//     },
+//     on: {
+//       slideChange: function () {
+//         var activeSlide = this.slides[this.activeIndex];
+//         var allSlides = this.slides;
   
-        // Loop through all slides
-        for (var i = 0; i < allSlides.length; i++) {
-          if (allSlides[i] === activeSlide) {
-            // Remove blur effect for active slide
-            allSlides[i].style.filter = "blur(0)";
-          } else {
-            // Apply blur effect to non-active slides
-            allSlides[i].style.filter = "blur(2px)"; // Adjust blur strength as needed
-          }
-        }
-      },
-    },
-  });
-
-  document.addEventListener('DOMContentLoaded', function() {
-    const menuBtn = document.getElementById('menuBtn');
-    const navbarLinks = document.getElementById('navbarLinks');
-
-    menuBtn.addEventListener('click', function() {
-        navbarLinks.classList.toggle('show-nav');
-    });
-});
-
+//         // Loop through all slides
+//         for (var i = 0; i < allSlides.length; i++) {
+//           if (allSlides[i] === activeSlide) {
+//             // Remove blur effect for active slide
+//             allSlides[i].style.filter = "blur(0)";
+//           } else {
+//             // Apply blur effect to non-active slides
+//             allSlides[i].style.filter = "blur(2px)"; // Adjust blur strength as needed
+//           }
+//         }
+//       },
+//     },
+//   });
   
-  //toArrow
-const arrowIcon= document.querySelector(".fa-arrow-up");
+//   document.addEventListener('DOMContentLoaded', function() {
+//     const menuBtn = document.querySelector('button[aria-controls="mobile-menu"]');
+//     const mobileMenu = document.getElementById('mobile-menu');
+//     const iconClosed = menuBtn.querySelector('svg.block');
+//     const iconOpen = menuBtn.querySelector('svg.hidden');
 
-arrowIcon.addEventListener("click" ,() =>{
-    window.scrollTo({
-        top:0,
-        behavior:"smooth"
-    })
-})
-  
-//Servicepage:
-document.addEventListener('DOMContentLoaded', function() {
-  const animatedHeading = document.getElementById('animatedHeading');
-  animatedHeading.style.opacity = '0';
-  animatedHeading.style.transform = 'translateY(-100px)';
-  animatedHeading.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+//     function hideMobileMenu() {
+//         mobileMenu.classList.add('hidden');
+//         iconClosed.classList.remove('hidden');
+//         iconOpen.classList.add('hidden');
+//     }
 
-  // Trigger the animation after a delay to ensure the page has fully loaded
-  setTimeout(function() {
-      animatedHeading.style.opacity = '2';
-      animatedHeading.style.transform = 'translateY(0)';
-  }, 1200); // Adjust the delay time as needed
-});
+//     hideMobileMenu();
+
+//     menuBtn.addEventListener('click', function() {
+//         const isExpanded = menuBtn.getAttribute('aria-expanded') === 'true';
+//         menuBtn.setAttribute('aria-expanded', !isExpanded);
+
+//         // Toggle visibility of the mobile menu
+//         mobileMenu.classList.toggle('hidden');
+
+//         // Toggle iconsW
+//         iconClosed.classList.toggle('hidden');
+//         iconOpen.classList.toggle('hidden');
+//     });
+// });
+
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     const menuBtn = document.querySelector('button[aria-controls="mobile-menu"]');
+//     const mobileMenu = document.getElementById('mobile-menu');
+//     const iconClosed = menuBtn.querySelector('svg.block');
+//     const iconOpen = menuBtn.querySelector('svg.hidden');
+
+//     function hideMobileMenu() {
+//         mobileMenu.classList.add('hidden');
+//         iconClosed.classList.remove('hidden');
+//         iconOpen.classList.add('hidden');
+//     }
+
+//     hideMobileMenu();
+
+//     menuBtn.addEventListener('click', function() {
+//         const isExpanded = menuBtn.getAttribute('aria-expanded') === 'true';
+//         menuBtn.setAttribute('aria-expanded', !isExpanded);
+
+//         // Toggle visibility of the mobile menu
+//         mobileMenu.classList.toggle('hidden');
+
+//         // Toggle icons
+//         iconClosed.classList.toggle('hidden');
+//         iconOpen.classList.toggle('hidden');
+//     });
+// });

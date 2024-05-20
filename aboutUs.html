@@ -3,47 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>about us</title>
+    <title>Document</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" >
-    
-    <!-- custom ccss ffile-->
     <link rel="stylesheet" href="input.css">
 </head>
 <body>
 
-    
-     <!--navbar start-->
-     <nav class="bg-blue-300 flex gap-10 py-8 px-10">
-        <h5 class="text-green-600 font-bold text-4xl">Roshan <span class="text-white font-family:ui-monospace">Drilling</span></h5>
-        <div id="navbarLinks" class="hidden sm:flex ml-auto">
-            <a href="index.html" class="nav-link font-bold hover:text-lg hover:bg-green-400 hover:text-white hover:text-base hover:rounded-lg hover:px-2 hover:py-1 sm:px-2 sm:py-1">Home</a>
-            <a href="aboutUs.html" class="nav-link font-bold hover:text-lg hover:bg-green-400 hover:text-white hover:text-base hover:rounded-lg hover:px-2 hover:py-1 ml-2 sm:ml-5 sm:px-2 sm:py-1">About Us</a>
-            <a href="services.html" class="nav-link font-bold hover:text-lg hover:bg-green-400 hover:text-white hover:text-base hover:rounded-lg hover:px-4 hover:py-1 ml-2 sm:ml-5 sm:px-4 sm:py-1">Services</a>
-            <a href="contact.html" class="nav-link font-bold hover:text-lg hover:bg-green-400 hover:text-white hover:text-base hover:rounded-lg hover:px-4 hover:py-1 ml-2 sm:ml-5 sm:px-4 sm:py-1 mr-5 sm:mr-20">Contact</a>
+<!-- Navbar Start -->
+<nav class="bg-gray-800 md:bg-blue-300">
+    <div class="relative flex h-16 items-center justify-between">
+        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <!-- Mobile menu button -->
+            <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400" aria-controls="mobile-menu" aria-expanded="false">
+                <!-- Icon when menu is closed -->
+                <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                <!-- Icon when menu is open -->
+                <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
         </div>
-    </nav>
-         <!--navbar end-->
-    <div class="bg-cover bg-center relative" style="background-image: url('resource/img/bgTxt.jpg');height: 100vh">
-        <div class="absolute inset-0 bg-black opacity-50"></div>
-        <div class="relative z-10">
-            <h1 class="text-white text-center text-4xl pt-20 text-orange-500">OUR SERVICES</h1>
-            <p class="text-white text-center mt-4">Our techniques , equipment and our team with skilled engineers and hydrogeologist,<br>
-                geologists and drilling experts enable us to deliver successful results in water well drilling and core drilling projects. 
-                <br>Explore our services to find out how we can help you reach your goals.</p>
+        <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start text-xl m-6">
+            <div class="flex">
+                <p class="text-green-600 font-bold text-sm md:text-2xl sm:mr-5">
+                    Roshan <span class="text-white font-family:ui-monospace">Drilling</span>
+                </p>
+            </div>
+            <div class="hidden sm:flex ml-auto sm-text-center text-black gap-7 mr-10 ">
+            <a href="index.html" class="nav-link font-semibold text-xl hover:bg-green-400 hover:text-black hover:font-bold hover:rounded-lg">Home</a>
+            <a href="aboutUs.html" class="nav-link font-semibold text-xl hover:bg-green-400 hover:text-black hover:font-bold hover:rounded-lg ">About Us</a>
+            <a href="services.html" class="nav-link font-semibold text-xl hover:bg-green-400 hover:text-black hover:font-bold hover:rounded-lg">Services</a>
+            <a href="contact.html" class="nav-link font-semibold text-xl hover:bg-green-400 hover:text-black hover:font-bold hover:rounded-lg">Contact</a>
+        </div>
         </div>
     </div>
-    
-       <!--footer-Starts-->
-     <footer class="bg-gray-800 text-white py-2">
-        <div class="container mx-auto flex justify-between items-center gap-10">
-            <p class="text-xs">© 2024 Roshan Drilling. All rights reserved.</p>
-            <i class="fas fa-arrow-up"></i>
+    <!-- Mobile menu, show/hide based on menu state -->
+    <div class="sm:hidden" id="mobile-menu">
+        <div class="space-y-1 px-2 pb-3 pt-2">
+            <a href="index.html" class="nav-link font-bold hover:bg-green-400 hover:text-white hover:rounded-lg hover:px-2 hover:py-1 sm:px-2 sm:py-1">Home</a>
+            <a href="aboutUs.html" class="nav-link font-bold hover:bg-green-400 hover:text-white hover:rounded-lg hover:px-2 hover:py-1 sm:px-2 sm:py-1">About Us</a>
+            <a href="services.html" class="nav-link font-bold hover:bg-green-400 hover:text-white hover:rounded-lg hover:px-2 hover:py-1 sm:px-2 sm:py-1">Services</a>
+            <a href="contact.html" class="nav-link font-bold hover:bg-green-400 hover:text-white hover:rounded-lg hover:px-2 hover:py-1 sm:px-2 sm:py-1">Contact</a>
         </div>
-    </footer>
-      <!--footer-Ends-->
+    </div>
+</nav>
+<!-- Navbar End -->
 
-      <!--javaScript -->
-      <script src="https://cdn.tailwindcss.com"></script>
-      <script src="js/script.js"></script>
+<div class="container mx-auto p-6 bg-white shadow-lg rounded-lg h-screen">
+    <div class="flex flex-col md:flex-row">
+        <!-- Left side: Image -->
+        <div class="md:w-1/2">
+            <img src="src/resource/img/slider/Rottary.jpg" alt="Sample Building" class="w-full h-auto rounded-lg shadow-md">
+        </div>
+
+        <!-- Right side: Company information -->
+        <div class="md:w-1/2 md:ml-8 mt-8 md:mt-0">
+            <h2 class="text-4xl font-bold text-gray-800 mb-4 text-center">About Us</h2>
+            <p class="text-gray-600 mb-4 md:text-xl">
+                Welcome to Roshan Drilling, a premier construction company specializing in drilling and building infrastructures. With years of experience and a dedicated team of professionals, we are committed to delivering high-quality projects that meet the needs of our clients.
+            </p>
+            <p class="text-gray-600 mb-4 md:text-xl">
+                Our mission is to provide exceptional construction services, ensuring the highest standards of safety, quality, and sustainability. We take pride in our work and strive to exceed expectations on every project.
+            </p>
+
+            <div class="mt-6">
+                <p class="flex items-center text-gray-600 mb-2">
+                    <i class="fas fa-envelope mr-2 text-blue-500"></i> Roshan.drilling2023@gmail.com                   
+                </p>
+                <p class="flex items-center text-gray-600 mb-2">
+                    <i class="fas fa-phone-alt mr-2 text-blue-500"></i>+977-9851017032
+                </p>
+                <p class="flex items-center text-gray-600 mb-2">
+                    <i class="fas fa-map-marker-alt mr-2 text-blue-500"></i> Kalanki-14, Kathmandu
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mx-auto mt-8 p-6 bg-white shadow-lg rounded-lg md:mt-20">
+    <h2 class="text-3xl font-bold text-gray-800 mb-6 md:text-center md:text-4xl">Our Team</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Team Member 1 -->
+        <div class="bg-white p-4 rounded-lg shadow-md">
+            <img src="https://via.placeholder.com/300x300" alt="Team Member 1" class="w-full h-auto rounded-lg mb-4">
+            <h3 class="text-xl font-bold text-gray-800">Samjhana Ghimire</h3>
+            <p class="text-gray-600">Account Manager</p>
+            <p class="text-gray-600">@roshandrilling.com</p>
+        </div>
+        <!-- Team Member 2 -->
+        <div class="bg-white p-4 rounded-lg shadow-md">
+            <img src="https://via.placeholder.com/300x300" alt="Team Member 2" class="w-full h-auto rounded-lg mb-4">
+            <h3 class="text-xl font-bold text-gray-800">Shyamu Ghimire Smith</h3>
+            <p class="text-gray-600">Account Manager</p>
+            <p class="text-gray-600">@roshandrilling.com</p>
+        </div>
+        <!-- Team Member 3 -->
+        <div class="bg-white p-4 rounded-lg shadow-md">
+            <img src="https://via.placeholder.com/300x300" alt="Team Member 3" class="w-full h-auto rounded-lg mb-4">
+            <h3 class="text-xl font-bold text-gray-800">Shyam-euu Ghimire</h3>
+            <p class="text-gray-600">Account Manager</p>
+            <p class="text-gray-600">@roshandrilling.com</p>
+        </div>
+    </div>
+</div>
+
+
+<!-- ContactInfo Div start -->
+
+<section class="p-4 bg-blue-300 sm:p-6 dark:bg-gray-800 items-center rounded-lg">
+    <div class="md:flex md:justify-between">
+
+        <div>
+            <h2 class="md:text-3xl font-bold md:mb-2 font-header text-xl">Ready to Get Started?</h2>
+            <p class="text-xs md:text-xl md:mb-4 md:text-center font-header mb-2">Contact us today for inquiries or to request a quote.</p>
+            <a href="contact.html" class="md:mr-4 bg-white hover:bg-green-400 hover:text-white hover:rounded-lg md:hover:px-3 hover:py-3 inline-flex items-center justify-center py-3 px-3 rounded-lg border-2 border-blue-500 transition duration-300">Contact Us</a>
+         </div>
+        
+          <div>
+            <h2 class="md:text-3xl font-bold md:mb-2 font-header text-xl mt-4">Our location</h2>
+              <p>Kalanki-14, Kathmandu <br>Phone: +977-9851017032</p>
+              <a href="mailto:roshan.drilling2023@gmail.com" class="text-blue-600 hover:text-green-600 underline">Roshan.drilling2023@gmail.com</a>
+          </div>
+        
+          <div class="md:text-center">
+            <h2 class="md:text-3xl font-bold md:mb-2 font-header text-xl mt-4 mb-2">Follow Us</h2>
+            <div class="flex md:justify-center bg-red-0 gap-2">
+              <a href="#" class="md:mr-4 md:bg-white hover:bg-green-400 hover:text-white hover:rounded-lg md:hover:px-2 hover:py-1 inline-flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-500 transition duration-300">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="md:mr-4 md:bg-white hover:bg-green-400 hover:text-white hover:rounded-lg hover:px-2 hover:py-1 inline-flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-500 transition duration-300">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="md:mr-4 md:bg-white hover:bg-green-400 hover:rounded-lg hover:px-2 hover:py-1 inline-flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-500 transition duration-300">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+
+    </div>
+   
+  </section>
+  
+
+
+
+
+
+         <!--ContactInfo Div end-->
+
+<!--credit-Starts-->
+<footer class="bg-gray-800 text-white">
+    <div class="container mx-auto flex justify-between gap-5">
+        <p class="text-xs px-2">© 2024 Roshan Drilling. All rights reserved.</p>
+        <i class=" px-2 fas fa-arrow-up"></i>
+    </div>
+</footer>
+  
+  <!--credit-Ends-->
+<!--ContactInfo Div End-->
+<script src="script2.js"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</script>
 </body>
 </html>

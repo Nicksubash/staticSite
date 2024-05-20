@@ -14,28 +14,53 @@
 </head>
 
 <body>
- <!--navbar start-->
- <nav class="bg-blue-300 flex justify-between items-center py-4 px-6">
-    <h5 class="text-green-600 font-bold text-sm md:text-2xl">Roshan <span class="text-white font-family:ui-monospace">Drilling</span></h5>
-    <div class="flex ml-auto">
-        <button id="menuBtn" class="text-white focus:outline-none block sm:hidden">
-            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
-        </button>
-        <div id="navbarLinks" class="hidden sm:flex ml-auto">
-          <a href="index.html" class="nav-link font-bold hover:text-lg hover:bg-green-400 hover:text-white hover:text-base hover:rounded-lg hover:px-2 hover:py-1 sm:px-2 sm:py-1">Home</a>
-          <a href="aboutUs.html" class="nav-link font-bold hover:text-lg hover:bg-green-400 hover:text-white hover:text-base hover:rounded-lg hover:px-2 hover:py-1 ml-2 sm:ml-5 sm:px-2 sm:py-1">About Us</a>
-          <a href="services.html" class="nav-link font-bold hover:text-lg hover:bg-green-400 hover:text-white hover:text-base hover:rounded-lg hover:px-4 hover:py-1 ml-2 sm:ml-5 sm:px-4 sm:py-1">Services</a>
-          <a href="contact.html" class="nav-link font-bold hover:text-lg hover:bg-green-400 hover:text-white hover:text-base hover:rounded-lg hover:px-4 hover:py-1 ml-2 sm:ml-5 sm:px-4 sm:py-1 mr-5 sm:mr-20">Contact</a>
+  
+  <!-- Navbar Start -->
+  <nav class="bg-gray-800 md:bg-blue-300">
+      <div class="relative flex h-16 items-center justify-between">
+          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <!-- Mobile menu button -->
+              <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400" aria-controls="mobile-menu" aria-expanded="false">
+                  <!-- Icon when menu is closed -->
+                  <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+                  <!-- Icon when menu is open -->
+                  <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+              </button>
+          </div>
+          <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start text-xl m-6">
+              <div class="flex">
+                  <p class="text-green-600 font-bold text-sm md:text-2xl sm:mr-5">
+                      Roshan <span class="text-white font-family:ui-monospace">Drilling</span>
+                  </p>
+              </div>
+              <div class="hidden sm:flex ml-auto sm-text-center text-black gap-7 mr-10 ">
+              <a href="index.html" class="nav-link font-semibold text-xl hover:bg-green-400 hover:text-black hover:font-bold hover:rounded-lg">Home</a>
+              <a href="aboutUs.html" class="nav-link font-semibold text-xl hover:bg-green-400 hover:text-black hover:font-bold hover:rounded-lg ">About Us</a>
+              <a href="services.html" class="nav-link font-semibold text-xl hover:bg-green-400 hover:text-black hover:font-bold hover:rounded-lg">Services</a>
+              <a href="contact.html" class="nav-link font-semibold text-xl hover:bg-green-400 hover:text-black hover:font-bold hover:rounded-lg">Contact</a>
+          </div>
+          </div>
       </div>
-    </div>
-</nav>
-
+      <!-- Mobile menu, show/hide based on menu state -->
+      <div class="sm:hidden" id="mobile-menu">
+          <div class="space-y-1 px-2 pb-3 pt-2">
+              <a href="index.html" class="nav-link font-bold hover:bg-green-400 hover:text-white hover:rounded-lg hover:px-2 hover:py-1 sm:px-2 sm:py-1">Home</a>
+              <a href="aboutUs.html" class="nav-link font-bold hover:bg-green-400 hover:text-white hover:rounded-lg hover:px-2 hover:py-1 sm:px-2 sm:py-1">About Us</a>
+              <a href="services.html" class="nav-link font-bold hover:bg-green-400 hover:text-white hover:rounded-lg hover:px-2 hover:py-1 sm:px-2 sm:py-1">Services</a>
+              <a href="contact.html" class="nav-link font-bold hover:bg-green-400 hover:text-white hover:rounded-lg hover:px-2 hover:py-1 sm:px-2 sm:py-1">Contact</a>
+          </div>
+      </div>
+  </nav>
+  <!-- Navbar End -->
+  
 <!--navbar end-->
 
  <!-- whychooese us Start -->
- <div class="bg-gray-200 py-10">
+ <div class="bg-gray-200 md:py-10 py-5">
         
     <div class="container mx-auto text-center">
         
@@ -65,10 +90,10 @@
 
 
  <!-- Contact Form Section -->
- <section class="min-h-screen flex justify-center items-center py-6">
-    <div class="bg-green-400 shadow-lg rounded-lg p-8 max-w-md w-full">
-      <h1 class="md:text-3xl font-semibold mb-2 text-center">Contact Us</h1>
-      <p class="text-xs md:text-xm mb-6 text-center">Contact us today for inquiries or to request a quote.</p>
+ <section class="md:min-h-screen flex justify-center items-center md:py-6">
+    <div class="bg-green-600 shadow-lg rounded-lg p-8 max-w-md w-full">
+      <h1 class="md:text-3xl font-bold mb-2 text-center text-xl">Contact Us</h1>
+      <p class="text-xs md:text-s mb-6 text-center">Contact us today for inquiries or to request a quote.</p>
       <form action="#" method="post">
         <div class="mb-4">
           <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name</label>
@@ -80,10 +105,19 @@
           <input id="email" type="email" name="email" placeholder="Your Email"
             class="w-full px-3 py-2 placeholder-gray-400 border rounded-lg focus:outline-none focus:ring focus:border-blue-500">
         </div>
+        <div class="mb-4">
+            <label for="phone" class="block text-gray-700 text-sm font-bold mb-2">Phone number</label>
+            <div class="flex">
+              <span class="prefix bg-gray-200 border border-r-0 rounded-l-lg px-3 py-2">+977</span>
+              <input id="phone" type="tel" name="phone" placeholder="Phone Number" pattern="[0-9]*" inputmode="numeric"
+                class="w-full px-3 py-2 placeholder-gray-400 border rounded-r-lg focus:outline-none focus:ring focus:border-blue-500">
+            </div>
+          </div>
+          
         <div class="mb-6">
           <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message</label>
           <textarea id="message" name="message" rows="4"
-            class="w-full px-3 py-2 placeholder-gray-400 border rounded-lg focus:outline-none focus:ring focus:border-blue-500"
+            class="w-full md:h-48 px-3 py-2 placeholder-gray-400 border rounded-lg focus:outline-none focus:ring focus:border-blue-500"
             placeholder="Your Message"></textarea>
         </div>
         <button type="submit"
@@ -94,31 +128,66 @@
   </section>
   <!-- End Contact Form Section -->
 
-  <div class="cta-container bg-blue-500 text-white py-4 px-6 rounded-lg shadow-md mb-1 mt-5 sm:flex md:flex-col lg:flex-row lg:items-center lg:justify-between">
-    <div class="mb-4 lg:mb-0">
-        <h2 class="text-xl md:text-xl font-bold mb-2">Ready to Get Started?</h2>
-        <p class="text-xs md:text-xl mb-4">Contact us today for inquiries or to request a quote.</p>
-        <a href="contact.html" class="bg-white text-blue-500  hover:bg-green-400 hover:text-white py-2 px-2 rounded-sm md:rounded-full inline-block transition duration-300">Contact Us</a>
-    </div>
 
-    
 
-    <div class="social text-lg text-white lg:text-right">
-      <span class="text-xl md:text-2xl font-bold mb-2 tracking-wide text-white">Social</span>
-        <p class="text-xs md:text-xl mb-4">Kalanki-14, Kathmandu <br>Phone: +1234567890</p>  
-        <a href="#" class="mr-4 hover:text-lg hover:bg-green-400 hover:text-white hover:text-lg hover:rounded-lg hover:px-2 hover:py-1"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" class="mr-4 hover:text-lg hover:bg-green-400 hover:text-white hover:text-lg hover:rounded-lg hover:px-2 hover:py-1"><i class="fab fa-twitter"></i></a>
-        <a href="#" class="mr-4 hover:text-lg hover:bg-green-400 hover:text-white hover:text-lg hover:rounded-lg hover:px-2 hover:py-1"><i class="fab fa-instagram"></i></a>
+<section class="p-4 bg-blue-300 sm:p-6 dark:bg-gray-800 items-center rounded-lg mt-2 ">
+    <div class="md:flex md:justify-between">
+
+        <div>
+            <h2 class="md:text-3xl font-bold md:mb-2 font-header text-xl">Ready to Get Started?</h2>
+            <p class="text-xs md:text-xl md:mb-4 md:text-center font-header mb-2">Contact us today for inquiries or to request a quote.</p>
+            <a href="contact.html" class="md:mr-4 bg-white hover:bg-green-400 hover:text-white hover:rounded-lg md:hover:px-3 hover:py-3 inline-flex items-center justify-center py-3 px-3 rounded-lg border-2 border-blue-500 transition duration-300">Contact Us</a>
+         </div>
+        
+          <div>
+            <h2 class="md:text-3xl font-bold md:mb-2 font-header text-xl mt-4">Our location</h2>
+              <p>Kalanki-14, Kathmandu <br>Phone: +977-9851017032</p>
+              <a href="mailto:roshan.drilling2023@gmail.com" class="text-blue-600 hover:text-green-600 underline">Roshan.drilling2023@gmail.com</a>
+          </div>
+        
+          <div class="md:text-center">
+            <h2 class="md:text-3xl font-bold md:mb-2 font-header text-xl mt-4 mb-2">Follow Us</h2>
+            <div class="flex md:justify-center bg-red-0 gap-2">
+              <a href="#" class="md:mr-4 md:bg-white hover:bg-green-400 hover:text-white hover:rounded-lg md:hover:px-2 hover:py-1 inline-flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-500 transition duration-300">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="md:mr-4 md:bg-white hover:bg-green-400 hover:text-white hover:rounded-lg hover:px-2 hover:py-1 inline-flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-500 transition duration-300">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="md:mr-4 md:bg-white hover:bg-green-400 hover:rounded-lg hover:px-2 hover:py-1 inline-flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-500 transition duration-300">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+
     </div>
-</div>
- 
+   
+  </section>
           
-          <footer class="bg-gray-800 text-white">
+          <footer class="bg-gray-800 text-white flex">
             <div class="container mx-auto flex justify-between ">
                 <p class="text-xs px-0">© 2024 Roshan Drilling. All rights reserved.</p>
-                <i class=" flex-auto px-0 fas fa-arrow-up"></i>
+                <i id="scrollToTop" class="mr-2 fas fa-arrow-up"></i>
             </div>
         </footer>
- <script src="https://cdn.tailwindcss.com"></script>
+
+
+        
+        <script type="module" src="script2.js" defer></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', (event) => {
+    const scrollToTopIcon = document.getElementById('scrollToTop');
+
+    scrollToTopIcon.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+});
+
+      </script>
+ 
 </body>
 </html>

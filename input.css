@@ -1,6 +1,8 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 .swiper {
     width: 100%;
@@ -20,7 +22,9 @@
     width: 100%;
   }
 
-  .service {
+  
+
+.service {
     background-color: #90cdf4;
     border-radius: 10px;
     padding: 20px;
@@ -63,81 +67,35 @@
   #animatedTag {
     animation: zoomIn 1s ease-in-out infinite;
   }
-
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;600&display=swap');
-
-
-
-    --green: #008000;
-    --black: #111;
-    --white: #fff;
-    --yellow: var(--yellow);
-    --light-bg: #f8f8ff;
-    --light-color: #666;
-    --box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.1);
-    --border: 0.1rem solid rgba(0, 0, 0, 0.3);
+.hidden {
+    display: none;
 }
 
-* {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    border: none;
-    transition: all 0.2s linear;
-}
-.swiper {
-    width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-  
-  .swiper-slide {
-    background-position: center;
-    background-size: cover;
-    width: 400px; /* Adjust width of all slides */
-    height: 400px; /* Adjust height of all slides */
-  }
-  
-  .swiper-slide img {
+.block {
     display: block;
-    width: 100%;
-  }
+}
 
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
 
 /* Mobile Styles */
 @media (max-width: 768px) {
     #navbarLinks {
         display: none;
         flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
+        background-color: #4A5568;
         width: 100%;
-        background-color: #4A5568; /* Adjust color as needed */
-        z-index: 999;
+        position: absolute;
+        top: 64px; /* Adjust according to the height of the navbar */
+        left: 0;
     }
 
-    #navbarLinks.show-nav {
+    #navbarLinks.show {
         display: flex;
-    }
-
-    .nav-link {
-        padding: 1rem;
-        color: #CBD5E0; /* Adjust color as needed */
-        text-decoration: none;
-        text-align: center;
-    }
-
-    .nav-link:hover {
-        background-color: #2D3748; /* Adjust color as needed */
     }
 }
 
@@ -145,5 +103,9 @@
 @media (min-width: 769px) {
     #menuBtn {
         display: none;
+    }
+
+    #navbarLinks {
+        display: flex !important;
     }
 }
