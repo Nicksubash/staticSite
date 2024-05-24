@@ -5,156 +5,184 @@
   <meta charset="utf-8" />
   <title>ServicePage</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Link Swiper's CSS -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" >
-    
-    <!-- custom ccss ffile-->
-    <link rel="stylesheet" href="input.css">
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="dist/app.css" />
 </head>
 
 <body>
-   <!-- Navbar Start -->
+  <!-- Navbar Start -->
   <nav class="bg-gray-800 md:bg-blue-300">
     <div class="relative flex h-16 items-center justify-between">
-        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-            <!-- Mobile menu button -->
-            <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400" aria-controls="mobile-menu" aria-expanded="false">
-                <!-- Icon when menu is closed -->
-                <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                </svg>
-                <!-- Icon when menu is open -->
-                <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-            </button>
+      <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+        <!-- Mobile menu button -->
+        <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400"
+          aria-controls="mobile-menu" aria-expanded="false">
+          <!-- Icon when menu is closed -->
+          <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+          <!-- Icon when menu is open -->
+          <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start text-xl m-6">
+        <div class="flex">
+          <p class="text-green-600 font-bold text-sm md:text-2xl sm:mr-5">
+            Roshan <span class="text-white font-family:ui-monospace">Drilling</span>
+          </p>
         </div>
-        <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start text-xl m-6">
-            <div class="flex">
-                <p class="text-green-600 font-bold text-sm md:text-2xl sm:mr-5">
-                    Roshan <span class="text-white font-family:ui-monospace">Drilling</span>
-                </p>
-            </div>
-            <div class="hidden sm:flex ml-auto sm-text-center text-black gap-7 mr-10 ">
-            <a href="index.html" class="nav-link font-semibold text-xl hover:bg-green-400 hover:text-black hover:font-bold hover:rounded-lg">Home</a>
-            <a href="aboutUs.html" class="nav-link font-semibold text-xl hover:bg-green-400 hover:text-black hover:font-bold hover:rounded-lg ">About Us</a>
-            <a href="services.html" class="nav-link font-semibold text-xl hover:bg-green-400 hover:text-black hover:font-bold hover:rounded-lg">Services</a>
-            <a href="contact.html" class="nav-link font-semibold text-xl hover:bg-green-400 hover:text-black hover:font-bold hover:rounded-lg">Contact</a>
+        <div class="hidden sm:flex ml-auto sm-text-center text-black gap-7 mr-10 ">
+          <a href="index.html"
+            class="nav-link font-semibold text-xl hover:bg-green-400 hover:text-black hover:font-bold hover:rounded-lg">Home</a>
+          <a href="about-us.html"
+            class="nav-link font-semibold text-xl hover:bg-green-400 hover:text-black hover:font-bold hover:rounded-lg ">About
+            Us</a>
+          <a href="services.html"
+            class="nav-link font-semibold text-xl hover:bg-green-400 hover:text-black hover:font-bold hover:rounded-lg">Services</a>
+          <a href="contact.html"
+            class="nav-link font-semibold text-xl hover:bg-green-400 hover:text-black hover:font-bold hover:rounded-lg">Contact</a>
         </div>
-        </div>
+      </div>
     </div>
     <!-- Mobile menu, show/hide based on menu state -->
     <div class="sm:hidden hidden" id="mobile-menu">
       <div class="space-y-1 px-2 pb-3 pt-2">
-          <a href="index.html" class="nav-link font-bold hover:bg-green-400 hover:text-white hover:rounded-lg hover:px-2 hover:py-1 sm:px-2 sm:py-1">Home</a>
-          <a href="aboutUs.html" class="nav-link font-bold hover:bg-green-400 hover:text-white hover:rounded-lg hover:px-2 hover:py-1 sm:px-2 sm:py-1">About Us</a>
-          <a href="services.html" class="nav-link font-bold hover:bg-green-400 hover:text-white hover:rounded-lg hover:px-2 hover:py-1 sm:px-2 sm:py-1">Services</a>
-          <a href="contact.html" class="nav-link font-bold hover:bg-green-400 hover:text-white hover:rounded-lg hover:px-2 hover:py-1 sm:px-2 sm:py-1">Contact</a>
+        <a href="index.html"
+          class="nav-link font-bold hover:bg-green-400 hover:text-white hover:rounded-lg hover:px-2 hover:py-1 sm:px-2 sm:py-1">Home</a>
+        <a href="aboutUs.html"
+          class="nav-link font-bold hover:bg-green-400 hover:text-white hover:rounded-lg hover:px-2 hover:py-1 sm:px-2 sm:py-1">About
+          Us</a>
+        <a href="services.html"
+          class="nav-link font-bold hover:bg-green-400 hover:text-white hover:rounded-lg hover:px-2 hover:py-1 sm:px-2 sm:py-1">Services</a>
+        <a href="contact.html"
+          class="nav-link font-bold hover:bg-green-400 hover:text-white hover:rounded-lg hover:px-2 hover:py-1 sm:px-2 sm:py-1">Contact</a>
       </div>
-  </div>
-</nav>
-<!-- Navbar End -->
-    
-         
-     <!--home screen start-->
-     <div class="bg-cover bg-center relative  rounded-sm shadow-2xl h-auto" style="background-image: url('src/resource/img/bgTxt.jpg'); ">
-        <div class="absolute inset-0 bg-black opacity-40 rounded-sm"></div>
-        <div class="relative z-10 text-center">
-            <h1 class="text:base md:text-2xl font-bold text-center mb-8 bg-green-600 text-white sm:p-3 " >OUR SERVICES</h1>
-            <p id="animatedHeading" class="text-xs lg:text-xl text-white mt-1 font-body text-wrap lg:p-2 text-center sm:py-8">Roshan Drilling and Construction Pvt. Ltd. specializes in providing complete drilling solutions that are customized to our clients' specific requirements. Our techniques , equipment and our team with skilled engineers and hydrogeologist, geologists and drilling experts enable us to deliver successful results in water well drilling and core drilling projects. Explore our services to find out how we can help you reach your goals.</p>
-        </div>
     </div>
-     <!--home screen ends-->
+  </nav>
+  <!-- Navbar End -->
 
-     <!-- Services Section -->
-<section class="container mx-auto mt-10">
-    <h2  id="animatedTag" class="text-base md:text-2xl font-bold text-center mb-8">What we are Providing</h2>
-  
+
+  <!--home screen start-->
+  <div class="bg-cover bg-center relative  rounded-sm shadow-2xl h-auto"
+    style="background-image: url('src/resource/img/bgTxt.jpg'); ">
+    <div class="absolute inset-0 bg-black opacity-40 rounded-sm"></div>
+    <div class="relative z-10 text-center">
+      <h1 class="text:base md:text-2xl font-bold text-center mb-8 bg-green-600 text-white sm:p-3 ">OUR SERVICES</h1>
+      <p id="animatedHeading" class="text-xs lg:text-xl text-white mt-1 font-body text-wrap lg:p-2 text-center sm:py-8">
+        Roshan Drilling and Construction Pvt. Ltd. specializes in providing complete drilling solutions that are
+        customized to our clients' specific requirements. Our techniques , equipment and our team with skilled engineers
+        and hydrogeologist, geologists and drilling experts enable us to deliver successful results in water well
+        drilling and core drilling projects. Explore our services to find out how we can help you reach your goals.</p>
+    </div>
+  </div>
+  <!--home screen ends-->
+
+  <!-- Services Section -->
+  <section class="container mx-auto mt-10">
+    <h2 id="animatedTag" class="text-base md:text-2xl font-bold text-center mb-8">What we are Providing</h2>
+
     <!-- Drilling Services -->
     <div class="service">
       <h3>Bore Hole Drilling for Groundwater</h3>
-      <p>Water well drilling is a crucial service for accessing underground water sources. At our company, we specialize in various methods to suit diverse geological (underground) conditions and project requirements.</p>
+      <p>Water well drilling is a crucial service for accessing underground water sources. At our company, we specialize
+        in various methods to suit diverse geological (underground) conditions and project requirements.</p>
     </div>
-  
+
     <div class="service">
       <h3>Core Drilling for Geotechnical analysis</h3>
-      <p>Core drilling is crucial in geotechnical work for evaluating soil and rock properties, and construction site feasibility. It aids engineers and geologists in making informed decisions regarding foundation design, site suitability, and environmental assessments. Widely utilized across industries like construction, mining, environmental science, and geological exploration, core drilling plays a fundamental role in subsurface investigation and analysis.</p>
+      <p>Core drilling is crucial in geotechnical work for evaluating soil and rock properties, and construction site
+        feasibility. It aids engineers and geologists in making informed decisions regarding foundation design, site
+        suitability, and environmental assessments. Widely utilized across industries like construction, mining,
+        environmental science, and geological exploration, core drilling plays a fundamental role in subsurface
+        investigation and analysis.</p>
     </div>
-  
+
     <!-- Construction Services -->
     <div class="service">
       <h3>Pipeline Works</h3>
-      <p>Efficient installation of pipelines for water supply, ensuring seamless flow and distribution. Applied in urban and rural settings, our pipeline solutions cater to municipalities, industries, and agricultural needs. From design to implementation, we ensure reliability and longevity in water conveyance systems.</p>
+      <p>Efficient installation of pipelines for water supply, ensuring seamless flow and distribution. Applied in urban
+        and rural settings, our pipeline solutions cater to municipalities, industries, and agricultural needs. From
+        design to implementation, we ensure reliability and longevity in water conveyance systems.</p>
     </div>
-  
+
     <div class="service">
       <h3>Overhead Tank Construction</h3>
-      <p>Expert construction of overhead tanks for water storage and supply, optimizing space and accessibility. Ideal for residential, commercial, and institutional projects, our tanks guarantee uninterrupted water availability, even in areas with irregular water access. We prioritize durability and sustainability in every tank design and installation.</p>
+      <p>Expert construction of overhead tanks for water storage and supply, optimizing space and accessibility. Ideal
+        for residential, commercial, and institutional projects, our tanks guarantee uninterrupted water availability,
+        even in areas with irregular water access. We prioritize durability and sustainability in every tank design and
+        installation.</p>
     </div>
-  
+
     <!-- Geophysical Survey -->
     <div class="service">
       <h3>Geophysical Survey</h3>
-      <p>Exploring the depths with our geophysical survey methods like for groundwater investigation. Utilizing advanced techniques, we assess subsurface characteristics to pinpoint water sources.</p>
+      <p>Exploring the depths with our geophysical survey methods like for groundwater investigation. Utilizing advanced
+        techniques, we assess subsurface characteristics to pinpoint water sources.</p>
     </div>
-  
+
   </section>
   <!-- Services Section End style2 -->
 
-  
-      <!--ContactInfo Div start-->
-          
-<section class="p-4 bg-blue-300 sm:p-6 dark:bg-gray-800 items-center rounded-lg  mt-2">
-  <div class="md:flex md:justify-between">
+
+  <!--ContactInfo Div start-->
+
+  <section class="p-4 bg-blue-300 sm:p-6 dark:bg-gray-800 items-center rounded-lg  mt-2">
+    <div class="md:flex md:justify-between">
 
       <div>
-          <h2 class="md:text-3xl font-bold md:mb-2 font-header text-xl">Ready to Get Started?</h2>
-          <p class="text-xs md:text-xl md:mb-4 md:text-center font-header mb-2">Contact us today for inquiries or to request a quote.</p>
-          <a href="contact.html" class="md:mr-4 bg-white hover:bg-green-400 hover:text-white hover:rounded-lg md:hover:px-3 hover:py-3 inline-flex items-center justify-center py-3 px-3 rounded-lg border-2 border-blue-500 transition duration-300">Contact Us</a>
-       </div>
-      
-        <div>
-          <h2 class="md:text-3xl font-bold md:mb-2 font-header text-xl mt-4">Our location</h2>
-            <p>Kalanki-14, Kathmandu <br>Phone: +977-9851017032</p>
-            <a href="mailto:roshan.drilling2023@gmail.com" class="text-blue-600 hover:text-green-600 underline">Roshan.drilling2023@gmail.com</a>
-        </div>
-      
-        <div class="md:text-center">
-          <h2 class="md:text-3xl font-bold md:mb-2 font-header text-xl mt-4 mb-2">Follow Us</h2>
-          <div class="flex md:justify-center bg-red-0 gap-2">
-            <a href="#" class="md:mr-4 md:bg-white hover:bg-green-400 hover:text-white hover:rounded-lg md:hover:px-2 hover:py-1 inline-flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-500 transition duration-300">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="#" class="md:mr-4 md:bg-white hover:bg-green-400 hover:text-white hover:rounded-lg hover:px-2 hover:py-1 inline-flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-500 transition duration-300">
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a href="#" class="md:mr-4 md:bg-white hover:bg-green-400 hover:rounded-lg hover:px-2 hover:py-1 inline-flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-500 transition duration-300">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </div>
-        </div>
+        <h2 class="md:text-3xl font-bold md:mb-2 font-header text-xl">Ready to Get Started?</h2>
+        <p class="text-xs md:text-xl md:mb-4 md:text-center font-header mb-2">Contact us today for inquiries or to
+          request a quote.</p>
+        <a href="contact.html"
+          class="md:mr-4 bg-white hover:bg-green-400 hover:text-white hover:rounded-lg md:hover:px-3 hover:py-3 inline-flex items-center justify-center py-3 px-3 rounded-lg border-2 border-blue-500 transition duration-300">Contact
+          Us</a>
+      </div>
 
-  </div>
- 
-</section>
-    <!--ContactInfo Div end-->
- 
-        
-        
+      <div>
+        <h2 class="md:text-3xl font-bold md:mb-2 font-header text-xl mt-4">Our location</h2>
+        <p>Kalanki-14, Kathmandu <br>Phone: +977-9851017032</p>
+        <a href="mailto:roshan.drilling2023@gmail.com"
+          class="text-blue-600 hover:text-green-600 underline">Roshan.drilling2023@gmail.com</a>
+      </div>
 
-    <!--credit-Starts-->
-    <footer class="bg-gray-800 text-white">
-        <div class="container mx-auto flex justify-between gap-5">
-            <p class="text-xs px-2">© 2024 Roshan Drilling. All rights reserved.</p>
-            <i class=" px-2 fas fa-arrow-up"></i>
+      <div class="md:text-center">
+        <h2 class="md:text-3xl font-bold md:mb-2 font-header text-xl mt-4 mb-2">Follow Us</h2>
+        <div class="flex md:justify-center bg-red-0 gap-2">
+          <a href="#"
+            class="md:mr-4 md:bg-white hover:bg-green-400 hover:text-white hover:rounded-lg md:hover:px-2 hover:py-1 inline-flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-500 transition duration-300">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#"
+            class="md:mr-4 md:bg-white hover:bg-green-400 hover:text-white hover:rounded-lg hover:px-2 hover:py-1 inline-flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-500 transition duration-300">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#"
+            class="md:mr-4 md:bg-white hover:bg-green-400 hover:rounded-lg hover:px-2 hover:py-1 inline-flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-500 transition duration-300">
+            <i class="fab fa-instagram"></i>
+          </a>
         </div>
-    </footer>
-      <!--credit-Ends-->
+      </div>
 
-      
-      <script src="script2.js"></script>
- <script src="https://cdn.tailwindcss.com"></script>
+    </div>
+
+  </section>
+  <!--ContactInfo Div end-->
+
+
+
+
+  <!--credit-Starts-->
+  <footer class="bg-gray-800 text-white">
+    <div class="container mx-auto flex justify-between gap-5">
+      <p class="text-xs px-2">© 2024 Roshan Drilling. All rights reserved.</p>
+      <i class=" px-2 fas fa-arrow-up"></i>
+    </div>
+  </footer>
+  <script src="src/js/script.js"></script>
 </body>
 
 </html>

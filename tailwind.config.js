@@ -1,12 +1,11 @@
-// tailwind.config.js
 module.exports = {
-  content: ['*'],
+  content: ["./*.{html,js }"],
   theme: {
     extend: {
       fontFamily: {
         'header': ['Cedarville Cursive', 'cursive'],
-        'dancing':['Dancing Script','Cursive'],
-        'eagle':['Eagle Lake','Regular']
+        'dancing': ['Dancing Script', 'Cursive'],
+        'eagle': ['Eagle Lake', 'Regular']
       },
     },
   },

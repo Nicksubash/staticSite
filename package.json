@@ -1,20 +1,20 @@
 {
-  "name": "renew",
+  "name": "project",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "vite",
-    "build": "vite build"
+    "dev": "npx tailwindcss -i ./src/css/style.css -o ./dist/app.css --watch",
+    "build": "npx tailwindcss -i ./src/css/style.css -o ./dist/app.css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^10.4.19",
-    "cssnano": "^7.0.1",
-    "postcss": "^8.4.38",
-    "tailwindcss": "^3.4.3",
-    "vite": "^5.2.11"
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.21",
+    "prettier": "^2.8.4",
+    "prettier-plugin-tailwindcss": "^0.2.5",
+    "tailwindcss": "^3.2.7"
   }
 }
