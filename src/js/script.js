@@ -76,3 +76,28 @@ document.addEventListener("DOMContentLoaded", (event)=> {
         })
     })
 })
+
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const currentPath = window.location.pathname;
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    navLinks.forEach(link => {
+      if (link.getAttribute('href') === currentPath) {
+        link.classList.add('active');
+      }
+    });
+  });
+
+
+
+  document.addEventListener('DOMContentLoaded', (event) => {
+    const scrollToTopIcon = document.getElementById('scrollToTop');
+
+    scrollToTopIcon.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  });

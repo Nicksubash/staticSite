@@ -7,7 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="dist/app.css" />
+  <meta name="google-site-verification" content="47jhOZvXHYlt1M7qkxxgxi3ORT0LSi481l-_FoA7swA" /> 
+
+  
 </head>
+
 
 <body>
   <!-- Navbar Start -->
@@ -31,10 +35,13 @@
       </div>
       <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start text-xl m-6">
         <div class="flex">
-          <p class="text-green-600 font-bold text-sm md:text-2xl sm:mr-5">
-            Roshan <span class="text-white font-family:ui-monospace">Drilling</span>
-          </p>
+          <a href="index.html" class="text-green-600 font-bold text-sm md:text-2xl sm:mr-5">
+            <p>
+              Roshan <span class="text-white font-family:ui-monospace">Drilling</span>
+            </p>
+          </a>
         </div>
+        
         <div class="hidden sm:flex ml-auto sm-text-center text-black gap-7 mr-10 ">
           <a href="index.html"
             class="nav-link font-semibold text-xl hover:bg-green-400 hover:text-black hover:font-bold hover:rounded-lg">Home</a>
@@ -53,7 +60,7 @@
       <div class="space-y-1 px-2 pb-3 pt-2">
         <a href="index.html"
           class="nav-link font-bold hover:bg-green-400 hover:text-white hover:rounded-lg hover:px-2 hover:py-1 sm:px-2 sm:py-1">Home</a>
-        <a href="aboutUs.html"
+        <a href="about-us.html"
           class="nav-link font-bold hover:bg-green-400 hover:text-white hover:rounded-lg hover:px-2 hover:py-1 sm:px-2 sm:py-1">About
           Us</a>
         <a href="services.html"
@@ -67,24 +74,25 @@
 
 
   <!--home screen start-->
-  <div class="bg-cover bg-center relative  rounded-sm shadow-2xl h-auto"
-    style="background-image: url('src/resource/img/bgTxt.jpg'); ">
-    <div class="absolute inset-0 bg-black opacity-40 rounded-sm"></div>
+  <div class="bg-cover bg-center relative rounded-sm shadow-2xl md:h-screen h-full w-full" style="background-image: url('src/resource/img/bgTxt.jpg');">
+       <div class="absolute inset-0 bg-black opacity-60 rounded-sm"></div>
     <div class="relative z-10 text-center">
-      <h1 class="text:base md:text-2xl font-bold text-center mb-8 bg-green-600 text-white sm:p-3 ">OUR SERVICES</h1>
-      <p id="animatedHeading" class="text-xs lg:text-xl text-white mt-1 font-body text-wrap lg:p-2 text-center sm:py-8">
-        Roshan Drilling and Construction Pvt. Ltd. specializes in providing complete drilling solutions that are
-        customized to our clients' specific requirements. Our techniques , equipment and our team with skilled engineers
-        and hydrogeologist, geologists and drilling experts enable us to deliver successful results in water well
-        drilling and core drilling projects. Explore our services to find out how we can help you reach your goals.</p>
+        <h1 class="text-base md:text-3xl font-bold text-center mb-8 bg-green-600 text-white p-2">OUR SERVICES</h1>
+        <!-- <h2 id="animatedTag" class="text-base md:text-3xl font-bold text-center mb-8 text-white">What we are Providing</h2> -->
+        <p class="fade-in-up text-xs md:text-2xl text-white  font-body md:p-4 text-center sm:py-8 md:text-center font-bold p-2 mb-2">
+            Roshan Drilling and Construction Pvt. Ltd. specializes in providing complete drilling solutions that are customized to our client’s specific requirements. Our techniques, equipment, and our team with skilled engineers and hydrogeologists, geologists, and drilling experts enable us to deliver successful results in water well drilling and core drilling projects. Explore our services to find out how we can help you reach your goals.
+        </p>
     </div>
-  </div>
+</div>
+
+
+  
+ 
   <!--home screen ends-->
 
   <!-- Services Section -->
   <section class="container mx-auto mt-10">
-    <h2 id="animatedTag" class="text-base md:text-2xl font-bold text-center mb-8">What we are Providing</h2>
-
+   
     <!-- Drilling Services -->
     <div class="service">
       <h3>Bore Hole Drilling for Groundwater</h3>
@@ -130,12 +138,12 @@
 
   <!--ContactInfo Div start-->
 
-  <section class="p-4 bg-blue-300 sm:p-6 dark:bg-gray-800 items-center rounded-lg  mt-2">
+  <section class="p-4 bg-blue-300 sm:p-6 text-gray-700 items-center rounded-lg  mt-2">
     <div class="md:flex md:justify-between">
 
       <div>
-        <h2 class="md:text-3xl font-bold md:mb-2 font-header text-xl">Ready to Get Started?</h2>
-        <p class="text-xs md:text-xl md:mb-4 md:text-center font-header mb-2">Contact us today for inquiries or to
+        <h2 class="md:text-3xl font-bold md:mb-2 text-xl">Ready to Get Started?</h2>
+        <p class="text-xs md:text-xl md:mb-4 md:text-center mb-2">Contact us today for inquiries or to
           request a quote.</p>
         <a href="contact.html"
           class="md:mr-4 bg-white hover:bg-green-400 hover:text-white hover:rounded-lg md:hover:px-3 hover:py-3 inline-flex items-center justify-center py-3 px-3 rounded-lg border-2 border-blue-500 transition duration-300">Contact
@@ -143,34 +151,24 @@
       </div>
 
       <div>
-        <h2 class="md:text-3xl font-bold md:mb-2 font-header text-xl mt-4">Our location</h2>
-        <p>Kalanki-14, Kathmandu <br>Phone: +977-9851017032</p>
+        <h2 class="md:text-3xl font-bold md:mb-2  text-xl">Our location</h2>
+        <h2 class=" md:text-xl">Kalanki-14, Kathmandu, Nepal <br>Phone: +977-9851017032</h2>
         <a href="mailto:roshan.drilling2023@gmail.com"
           class="text-blue-600 hover:text-green-600 underline">Roshan.drilling2023@gmail.com</a>
       </div>
 
       <div class="md:text-center">
-        <h2 class="md:text-3xl font-bold md:mb-2 font-header text-xl mt-4 mb-2">Follow Us</h2>
-        <div class="flex md:justify-center bg-red-0 gap-2">
-          <a href="#"
-            class="md:mr-4 md:bg-white hover:bg-green-400 hover:text-white hover:rounded-lg md:hover:px-2 hover:py-1 inline-flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-500 transition duration-300">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="#"
-            class="md:mr-4 md:bg-white hover:bg-green-400 hover:text-white hover:rounded-lg hover:px-2 hover:py-1 inline-flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-500 transition duration-300">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="#"
-            class="md:mr-4 md:bg-white hover:bg-green-400 hover:rounded-lg hover:px-2 hover:py-1 inline-flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-500 transition duration-300">
-            <i class="fab fa-instagram"></i>
-          </a>
-        </div>
-      </div>
-
+        <h2 class="md:text-3xl font-bold md:mb-2 text-xl mb-2">Follow Us </h2>
+        <a href="https://www.facebook.com/people/Roshan-Drilling-and-Construction-pvt-ltd/61560369236403/"
+        class="md:mr-4 md:bg-white hover:bg-green-400 hover:text-white hover:rounded-lg md:hover:px-2 hover:py-1 inline-flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-500 transition duration-300">
+       <i class="fab fa-facebook-f"></i>
+        </a>
+       </div>
+       
     </div>
 
   </section>
-  <!--ContactInfo Div end-->
+
 
 
 
@@ -183,6 +181,21 @@
     </div>
   </footer>
   <script src="src/js/script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      const scrollToTopIcon = document.getElementById('scrollToTop');
+
+      scrollToTopIcon.addEventListener('click', () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+    });
+
+  </script>
+
+  
 </body>
 
 </html>

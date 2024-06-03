@@ -8,65 +8,71 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="dist/app.css" />
+    <meta name="google-site-verification" content="47jhOZvXHYlt1M7qkxxgxi3ORT0LSi481l-_FoA7swA" />
 </head>
 
 <body>
 
     <!-- Navbar Start -->
+    <!--  -->
+
     <nav class="bg-gray-800 md:bg-blue-300">
         <div class="relative flex h-16 items-center justify-between">
-            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                <!-- Mobile menu button -->
-                <button type="button"
-                    class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400"
-                    aria-controls="mobile-menu" aria-expanded="false">
-                    <!-- Icon when menu is closed -->
-                    <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                        aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                    </svg>
-                    <!-- Icon when menu is open -->
-                    <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                        aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                </button>
+          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <!-- Mobile menu button -->
+            <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400"
+              aria-controls="mobile-menu" aria-expanded="false">
+              <!-- Icon when menu is closed -->
+              <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+              <!-- Icon when menu is open -->
+              <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start text-xl m-6">
+            <div class="flex">
+                <a href="index.html" class="text-green-600 font-bold text-sm md:text-2xl sm:mr-5">
+                  <p>
+                    Roshan <span class="text-white font-family:ui-monospace">Drilling</span>
+                  </p>
+                </a>
+              </div>
+              
+            <div class="hidden sm:flex ml-auto sm-text-center text-black gap-7 mr-10 ">
+              <a href="index.html"
+                class="nav-link font-semibold text-xl hover:bg-green-400 hover:text-black hover:font-bold hover:rounded-lg">Home</a>
+              <a href="about-us.html"
+                class="nav-link font-semibold text-xl hover:bg-green-400 hover:text-black hover:font-bold hover:rounded-lg ">About
+                Us</a>
+              <a href="services.html"
+                class="nav-link font-semibold text-xl hover:bg-green-400 hover:text-black hover:font-bold hover:rounded-lg">Services</a>
+              <a href="contact.html"
+                class="nav-link font-semibold text-xl hover:bg-green-400 hover:text-black hover:font-bold hover:rounded-lg">Contact</a>
             </div>
-            <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start text-xl m-6">
-                <div class="flex">
-                    <p class="text-green-600 font-bold text-sm md:text-2xl sm:mr-5">
-                        Roshan <span class="text-white font-family:ui-monospace">Drilling</span>
-                    </p>
-                </div>
-                <div class="hidden sm:flex ml-auto sm-text-center text-black gap-7 mr-10 ">
-                    <a href="index.html"
-                        class="nav-link font-semibold text-xl hover:bg-green-400 hover:text-black hover:font-bold hover:rounded-lg">Home</a>
-                    <a href="about-us.html"
-                        class="nav-link font-semibold text-xl hover:bg-green-400 hover:text-black hover:font-bold hover:rounded-lg ">About
-                        Us</a>
-                    <a href="services.html"
-                        class="nav-link font-semibold text-xl hover:bg-green-400 hover:text-black hover:font-bold hover:rounded-lg">Services</a>
-                    <a href="contact.html"
-                        class="nav-link font-semibold text-xl hover:bg-green-400 hover:text-black hover:font-bold hover:rounded-lg">Contact</a>
-                </div>
-            </div>
+          </div>
         </div>
         <!-- Mobile menu, show/hide based on menu state -->
         <div class="sm:hidden" id="mobile-menu">
-            <div class="space-y-1 px-2 pb-3 pt-2">
-                <a href="index.html"
-                    class="nav-link font-bold hover:bg-green-400 hover:text-white hover:rounded-lg hover:px-2 hover:py-1 sm:px-2 sm:py-1">Home</a>
-                <a href="aboutUs.html"
-                    class="nav-link font-bold hover:bg-green-400 hover:text-white hover:rounded-lg hover:px-2 hover:py-1 sm:px-2 sm:py-1">About
-                    Us</a>
-                <a href="services.html"
-                    class="nav-link font-bold hover:bg-green-400 hover:text-white hover:rounded-lg hover:px-2 hover:py-1 sm:px-2 sm:py-1">Services</a>
-                <a href="contact.html"
-                    class="nav-link font-bold hover:bg-green-400 hover:text-white hover:rounded-lg hover:px-2 hover:py-1 sm:px-2 sm:py-1">Contact</a>
-            </div>
+          <div class="space-y-1 px-2 pb-3 pt-2">
+            <a href="index.html"
+              class="nav-link font-bold hover:bg-green-400 hover:text-white hover:rounded-lg hover:px-2 hover:py-1 sm:px-2 sm:py-1">Home</a>
+            <a href="about-us.html"
+              class="nav-link font-bold hover:bg-green-400 hover:text-white hover:rounded-lg hover:px-2 hover:py-1 sm:px-2 sm:py-1">About
+              Us</a>
+            <a href="services.html"
+              class="nav-link font-bold hover:bg-green-400 hover:text-white hover:rounded-lg hover:px-2 hover:py-1 sm:px-2 sm:py-1">Services</a>
+            <a href="contact.html"
+              class="nav-link font-bold hover:bg-green-400 hover:text-white hover:rounded-lg hover:px-2 hover:py-1 sm:px-2 sm:py-1">Contact</a>
+          </div>
         </div>
-    </nav>
+      </nav>
+      <!-- Navbar End -->
+      
     <!-- Navbar End -->
 
     <div class="container mx-auto p-6 bg-white shadow-lg rounded-lg h-screen">
@@ -78,13 +84,13 @@
             </div>
 
             <!-- Right side: Company information -->
-            <div class="md:w-1/2 md:ml-8 mt-8 md:mt-0">
+            <div class="md:w-1/2 md:ml-8 mt-8 md:mt-0 fade-in-up">
                 <h2 class="text-4xl font-bold text-gray-800 mb-4 text-center">About Us</h2>
-                <p class="text-gray-600 mb-4 md:text-xl">
+                <h1 class="text-gray-600 mb-4 md:text-xl">
                     Welcome to Roshan Drilling, a premier construction company specializing in drilling and building
-                    infrastructures. With years of experience and a dedicated team of professionals, we are committed to
+                    infrastructures, Located in <span class="font-bold">Nepal.</span> With the years of experience and a dedicated team of professionals, we are committed to
                     delivering high-quality projects that meet the needs of our clients.
-                </p>
+                </h1>
                 <p class="text-gray-600 mb-4 md:text-xl">
                     Our mission is to provide exceptional construction services, ensuring the highest standards of
                     safety, quality, and sustainability. We take pride in our work and strive to exceed expectations on
@@ -99,7 +105,7 @@
                         <i class="fas fa-phone-alt mr-2 text-blue-500"></i>+977-9851017032
                     </p>
                     <p class="flex items-center text-gray-600 mb-2">
-                        <i class="fas fa-map-marker-alt mr-2 text-blue-500"></i> Kalanki-14, Kathmandu
+                        <i class="fas fa-map-marker-alt mr-2 text-blue-500"></i> Kalanki-14, Kathmandu,Nepal
                     </p>
                 </div>
             </div>
@@ -113,25 +119,25 @@
             <div class="bg-white p-4 rounded-lg shadow-md">
                 <img src="https://via.placeholder.com/300x300" alt="Team Member 1"
                     class="w-full h-auto rounded-lg mb-4">
-                <h3 class="text-xl font-bold text-gray-800">Samjhana Ghimire</h3>
-                <p class="text-gray-600">Account Manager</p>
-                <p class="text-gray-600">@roshandrilling.com</p>
+                <h3 class="text-xl font-bold text-gray-800">Pradeep Karki</h3>
+                <p class="text-gray-600">Geologist</p>
+                <!-- <p class="text-gray-600">@roshandrilling.com</p> -->
             </div>
             <!-- Team Member 2 -->
             <div class="bg-white p-4 rounded-lg shadow-md">
                 <img src="https://via.placeholder.com/300x300" alt="Team Member 2"
                     class="w-full h-auto rounded-lg mb-4">
-                <h3 class="text-xl font-bold text-gray-800">Shyamu Ghimire Smith</h3>
-                <p class="text-gray-600">Account Manager</p>
-                <p class="text-gray-600">@roshandrilling.com</p>
+                <h3 class="text-xl font-bold text-gray-800">Ripankar Karki</h3>
+                <p class="text-gray-600">Account</p>
+                <!-- <p class="text-gray-600">@roshandrilling.com</p> -->
             </div>
             <!-- Team Member 3 -->
             <div class="bg-white p-4 rounded-lg shadow-md">
                 <img src="https://via.placeholder.com/300x300" alt="Team Member 3"
                     class="w-full h-auto rounded-lg mb-4">
-                <h3 class="text-xl font-bold text-gray-800">Shyam-euu Ghimire</h3>
-                <p class="text-gray-600">Account Manager</p>
-                <p class="text-gray-600">@roshandrilling.com</p>
+                <h3 class="text-xl font-bold text-gray-800">Samit KC </h3>
+                <p class="text-gray-600"> Engineer</p>
+                <!-- <p class="text-gray-600">@roshandrilling.com</p> -->
             </div>
         </div>
     </div>
@@ -139,51 +145,37 @@
 
     <!-- ContactInfo Div start -->
 
-    <section class="p-4 bg-blue-300 sm:p-6 dark:bg-gray-800 items-center rounded-lg">
+    <section class="p-4 bg-blue-300 sm:p-6 text-gray-700 items-center rounded-lg  mt-2">
         <div class="md:flex md:justify-between">
+    
+          <div>
+            <h2 class="md:text-3xl font-bold md:mb-2 text-xl">Ready to Get Started?</h2>
+            <p class="text-xs md:text-xl md:mb-4 md:text-center mb-2">Contact us today for inquiries or to
+              request a quote.</p>
+            <a href="contact.html"
+              class="md:mr-4 bg-white hover:bg-green-400 hover:text-white hover:rounded-lg md:hover:px-3 hover:py-3 inline-flex items-center justify-center py-3 px-3 rounded-lg border-2 border-blue-500 transition duration-300">Contact
+              Us</a>
+          </div>
+    
+          <div>
+            <h2 class="md:text-3xl font-bold md:mb-2  text-xl">Our location</h2>
+            <h2 class=" md:text-xl">Kalanki-14, Kathmandu, Nepal <br>Phone: +977-9851017032</h2>
+            <a href="mailto:roshan.drilling2023@gmail.com"
+              class="text-blue-600 hover:text-green-600 underline">Roshan.drilling2023@gmail.com</a>
+          </div>
 
-            <div>
-                <h2 class="md:text-3xl font-bold md:mb-2 font-header text-xl">Ready to Get Started?</h2>
-                <p class="text-xs md:text-xl md:mb-4 md:text-center font-header mb-2">Contact us today for inquiries or
-                    to request a quote.</p>
-                <a href="contact.html"
-                    class="md:mr-4 bg-white hover:bg-green-400 hover:text-white hover:rounded-lg md:hover:px-3 hover:py-3 inline-flex items-center justify-center py-3 px-3 rounded-lg border-2 border-blue-500 transition duration-300">Contact
-                    Us</a>
-            </div>
+          
+           <div class="md:text-center">
+            <h2 class="md:text-3xl font-bold md:mb-2 text-xl mb-2">Follow Us </h2>
+            <a href="https://www.facebook.com/people/Roshan-Drilling-and-Construction-pvt-ltd/61560369236403/"
+            class="md:mr-4 md:bg-white hover:bg-green-400 hover:text-white hover:rounded-lg md:hover:px-2 hover:py-1 inline-flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-500 transition duration-300">
+           <i class="fab fa-facebook-f"></i>
+            </a>
+           </div>
 
-            <div>
-                <h2 class="md:text-3xl font-bold md:mb-2 font-header text-xl mt-4">Our location</h2>
-                <p>Kalanki-14, Kathmandu <br>Phone: +977-9851017032</p>
-                <a href="mailto:roshan.drilling2023@gmail.com"
-                    class="text-blue-600 hover:text-green-600 underline">Roshan.drilling2023@gmail.com</a>
-            </div>
-
-            <div class="md:text-center">
-                <h2 class="md:text-3xl font-bold md:mb-2 font-header text-xl mt-4 mb-2">Follow Us</h2>
-                <div class="flex md:justify-center bg-red-0 gap-2">
-                    <a href="#"
-                        class="md:mr-4 md:bg-white hover:bg-green-400 hover:text-white hover:rounded-lg md:hover:px-2 hover:py-1 inline-flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-500 transition duration-300">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#"
-                        class="md:mr-4 md:bg-white hover:bg-green-400 hover:text-white hover:rounded-lg hover:px-2 hover:py-1 inline-flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-500 transition duration-300">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#"
-                        class="md:mr-4 md:bg-white hover:bg-green-400 hover:rounded-lg hover:px-2 hover:py-1 inline-flex items-center justify-center w-12 h-12 rounded-full border-2 border-blue-500 transition duration-300">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </div>
-            </div>
-
+           
         </div>
-
-    </section>
-
-
-
-
-
+      </section>
 
     <!--ContactInfo Div end-->
 
@@ -197,7 +189,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="src/js/script.js"></script>
 
-    </script>
 </body>
 
 </html>
